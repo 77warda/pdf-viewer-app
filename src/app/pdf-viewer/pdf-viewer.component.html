@@ -1,0 +1,35 @@
+<div class="container">
+  <h1>PDF Viewer works here</h1>
+  <!-- ========enable text selection=========== 
+[textLayer]="true"
+[showHandToolButton]="true" 
+============ Full screen mode=============
+[showPresentationModeButton]="true"
+============ Full Header show when showToolbar is true=============
+    [showToolbar]="false"
+============ Sidebarvisible is true by default=============
+    [sidebarVisible]="true"
+
+-->
+
+  <ngx-extended-pdf-viewer
+    [showEditor]="false"
+    [src]="samplePDF"
+    backgroundColor="#ffffff"
+    [height]="'85vh'"
+    [useBrowserLocale]="true"
+    [handTool]="false"
+    [showHandToolButton]="true"
+    [textLayer]="true"
+    [showPresentationModeButton]="false"
+    [filenameForDownload]="'sample.pdf'"
+    [showToolbar]="true"
+    [showPrintButton]="false"
+    [zoom]="80"
+    [showZoomButtons]="true"
+    [showDownloadButton]="true"
+    [sidebarVisible]="false"
+    (pdfLoaded)="onPdfLoaded($event)"
+  >
+  </ngx-extended-pdf-viewer>
+</div>
