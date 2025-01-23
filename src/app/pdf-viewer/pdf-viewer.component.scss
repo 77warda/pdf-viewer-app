@@ -17,3 +17,24 @@ ngx-extended-pdf-viewer #toolbarContainer {
     height: 80px !important;
     background-color: #f9f9f9;
 }
+
+/* General styling for the PDF viewer */
+ngx-extended-pdf-viewer {
+    display: block;
+    border: 4px solid #000;
+    border-radius: 8px;
+    background-color: #007acc;
+    padding: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-size: 22px;
+    /* Set font size */
+}
+
+/* Toolbar customization */
+ngx-extended-pdf-viewer .toolbar {
+    background-color: #007acc;
+    /* Toolbar background */
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 8px;
+}
